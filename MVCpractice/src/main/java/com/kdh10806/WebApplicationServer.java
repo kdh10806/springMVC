@@ -10,6 +10,7 @@ import java.io.File;
 public class WebApplicationServer {
     private static final Logger log = LoggerFactory.getLogger(WebApplicationServer.class);
 
+    //내장 톰캣 사용
     public static void main(String[] args) throws Exception {
         String webappDirLocation = "webapps/";
         Tomcat tomcat = new Tomcat();
