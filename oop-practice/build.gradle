@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.kdh10806'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //패스워드 생성 라이브러리
+    implementation 'org.passay:passay:1.6.4'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+}
+
+test {
+    useJUnitPlatform()
+}
